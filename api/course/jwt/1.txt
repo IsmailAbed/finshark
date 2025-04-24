@@ -1,0 +1,16 @@
+so within the username and password, jwt will be passed to server to validate the token and a jwt is composed of header, payload and and all encypted by a secret ..
+
+we need to install:
+
+cntrl + shift + p , then add package: 
+1. identity.core
+2. jwt bearer
+
+add in program.cs the code...
+
+then migrate and update db since there is now user model:
+
+1. dotnet ef migrations add Identity
+2. dotnet ef database update 
+
+-------------------------------------------------------------------------------------------
